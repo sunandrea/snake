@@ -1,12 +1,15 @@
 {
   "version": 2,
   "builds": [
-    { "src": "server/package.json", "use": "@vercel/node" },
+    { "src": "server/server.js", "use": "@vercel/node" },
     {
       "src": "snake/package.json",
       "use": "@vercel/static-build",
       "config": { "outputDirectory": "build" }
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "snake/$1" }]
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/server/server.js" },
+    { "src": "/(.*)", "dest": "snake/$1" }
+  ]
 }

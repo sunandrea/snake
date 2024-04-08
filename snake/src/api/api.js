@@ -1,5 +1,5 @@
 class API {
-  static baseURL = "http://localhost:5000/api";
+  static baseURL = "https://snake-three-puce.vercel.app/api";
 
   static async getResults() {
     const response = await fetch(`${this.baseURL}/results`);

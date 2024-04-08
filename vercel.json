@@ -8,5 +8,5 @@
       "config": { "outputDirectory": "build" }
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "client/$1" }]
+  "routes": [{ "src": "/(.*)", "dest": "snake/$1" }]
 }

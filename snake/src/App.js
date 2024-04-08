@@ -14,7 +14,6 @@ const getRandomFood = () => {
   let y = Math.floor((Math.random() * (max - min + 1) + min) / 2) * 2;
   const type = Math.floor(Math.random() * 3) + 1;
   const points = type === 1 ? 1 : type === 2 ? 5 : 10;
-  console.log({ type, points, position: [x, y] });
   return { type, points, position: [x, y] };
 };
 

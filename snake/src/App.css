@@ -1,0 +1,85 @@
+.game-area {
+  position: relative;
+  height: 600px;
+  width: 600px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+.score-panel,
+.speed-panel,
+.name-panel {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.restart-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.snake-dot,
+.food-dot {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background: black;
+}
+
+.food-dot {
+  background: red;
+}
+
+.food-dot-1 {
+  position: absolute;
+
+  width: 2%;
+  height: 2%;
+  background: red;
+}
+
+.food-dot-2 {
+  position: absolute;
+
+  width: 2%;
+  height: 2%;
+  background: orange;
+}
+
+.food-dot-3 {
+  position: absolute;
+
+  width: 2%;
+  height: 2%;
+  background: gold;
+}
+
+.game-paused {
+  position: relative;
+}
+
+.game-paused::after {
+  content: "Pause";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.game-paused > * {
+  filter: blur(5px);
+  pointer-events: none;
+}

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./Menu.css";
 
 const Menu = ({ onRouteChange }) => {
   const [name, setName] = useState("");
